@@ -1,2 +1,2 @@
 # Data-Structures-Algorithms
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+Collection of answers to LeetCode questions updated in real time.
