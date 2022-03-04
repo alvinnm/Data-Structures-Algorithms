@@ -7,9 +7,11 @@
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         def check(L, R):
-            if L and R:
-                return L.val == R.val and check(L.left, R.right) and check(L.right, R.left)
-            return L == R
+            if not L and not R:
+                return True
+            if L and R and L.val == R.val:
+                return check(L.left, R.right) and check(L.right, R.left)
+            return False
         if not root:
             return True
         return check(root.left, root.right)
